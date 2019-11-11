@@ -1,20 +1,23 @@
 //
-//  ViewController.swift
+//  ArticleViewController.swift
 //  News Application
 //
-//  Created by Simranjeet  Singh on 2019-11-05.
+//  Created by Simranjeet  Singh on 2019-11-06.
 //  Copyright © 2019 Simranjeet  Singh. All rights reserved.
 //
 
 import UIKit
+import WebKit
 
-class ViewController: UIViewController {
+class ArticleViewController: UIViewController, WKNavigationDelegate{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
+       
+    }
+    
+
+  
 
 }
-
