@@ -15,7 +15,7 @@ class NewsApiManager
 	{
 		let newsSource = source ?? "techcrunch"
 
-		let urlString = "https://newsapi.org/v1/articles?source=\(newsSource)&apiKey=d6572d2119784dd985b97c0e94cfbad1"
+		let urlString = "https://newsapi.org/v1/articles?source=\(newsSource)&apiKey=84c54c145e944bb19b25805e463746e8"
 
 		return URL(string: urlString)
 	}
