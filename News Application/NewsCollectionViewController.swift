@@ -13,9 +13,11 @@ class NewsCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         self.reloadData()
         
+        self.collectionView?.refreshControl = UIRefreshControl()
+        self.collectionView?.refreshControl?.addTarget(self, action: #selector(NewsCollectionViewController.reloadData), for: .valueChanged)
+
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -31,7 +33,8 @@ class NewsCollectionViewController: UICollectionViewController {
 
         return cell
     }
-    func reloadData() {
+    
+    @objc func reloadData() {
         let source = "cnn"
 
         if let url = NewsApiManager.getNewsURL(source: source) {
@@ -44,9 +47,21 @@ class NewsCollectionViewController: UICollectionViewController {
                 }
             }
             task.resume()
-
+        
+        } else {
+            self.collectionView.refreshControl?.endRefreshing()
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let articleVC = segue.destination as? ArticleViewController,
+            let indexPath = self.collectionView.indexPath(for: ((sender as? UICollectionViewCell)!)) {
+            
+            articleVC.newsURL = URL(string: self.articles![indexPath.row].url)
             
         }
     }
+    
+    
 }
       
