@@ -19,6 +19,7 @@
 		E450E7FD2373377C00106D16 /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E450E7FC2373377C00106D16 /* NewsCollectionViewCell.swift */; };
 		E450E7FF23733AE100106D16 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E450E7FE23733AE100106D16 /* Extensions.swift */; };
 		E450E801237341A400106D16 /* NewsApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E450E800237341A400106D16 /* NewsApiManager.swift */; };
+		E4698056237F2FC1000152B2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4698055237F2FC1000152B2 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		E450E7FC2373377C00106D16 /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E450E7FE23733AE100106D16 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		E450E800237341A400106D16 /* NewsApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsApiManager.swift; sourceTree = "<group>"; };
+		E4698055237F2FC1000152B2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +78,9 @@
 				E44C81942373A24400DA3BCA /* ArticleViewController.swift */,
 				E450E7FC2373377C00106D16 /* NewsCollectionViewCell.swift */,
 				E450E800237341A400106D16 /* NewsApiManager.swift */,
-				E44F4096237287DA00A7F4FD /* Assets.xcassets */,
 				E44C81922373962F00DA3BCA /* News.swift */,
+				E4698055237F2FC1000152B2 /* SettingsViewController.swift */,
+				E44F4096237287DA00A7F4FD /* Assets.xcassets */,
 				E44F4098237287DA00A7F4FD /* LaunchScreen.storyboard */,
 				E44F409B237287DA00A7F4FD /* Info.plist */,
 				E44C81962373A66500DA3BCA /* Settings.bundle */,
@@ -165,6 +168,7 @@
 				E44F408E237287D500A7F4FD /* AppDelegate.swift in Sources */,
 				E44F4090237287D500A7F4FD /* SceneDelegate.swift in Sources */,
 				E450E7FD2373377C00106D16 /* NewsCollectionViewCell.swift in Sources */,
+				E4698056237F2FC1000152B2 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

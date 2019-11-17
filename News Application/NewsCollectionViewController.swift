@@ -21,7 +21,13 @@ class NewsCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-          return articles?.count ?? 0
+          var maxArticles = UserDefaults.standard.integer(forKey: "num_articles")
+
+             if maxArticles <= 0 {
+                 maxArticles = 10
+             }
+
+             return min(self.articles?.count ?? 0, maxArticles)
       }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -35,7 +41,8 @@ class NewsCollectionViewController: UICollectionViewController {
     }
     
     @objc func reloadData() {
-        let source = "cnn"
+       let source = UserDefaults.standard.string(forKey: "news_source")
+
 
         if let url = NewsApiManager.getNewsURL(source: source) {
             let session = URLSession.shared
