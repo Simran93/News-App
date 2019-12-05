@@ -51,6 +51,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E44635622398D44C008D60BA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E450E7FA237336EC00106D16 /* NewsCollectionViewController.swift */,
+				E44C81942373A24400DA3BCA /* ArticleViewController.swift */,
+				E4698055237F2FC1000152B2 /* SettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E44635632398D48C008D60BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E44F4093237287D500A7F4FD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E44635642398D4AA008D60BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E44C81922373962F00DA3BCA /* News.swift */,
+				E450E800237341A400106D16 /* NewsApiManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E44635652398D51D008D60BA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E450E7FE23733AE100106D16 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E44F4081237287D500A7F4FD = {
 			isa = PBXGroup;
 			children = (
@@ -72,14 +107,11 @@
 			children = (
 				E44F408D237287D500A7F4FD /* AppDelegate.swift */,
 				E44F408F237287D500A7F4FD /* SceneDelegate.swift */,
-				E44F4093237287D500A7F4FD /* Main.storyboard */,
-				E450E7FE23733AE100106D16 /* Extensions.swift */,
-				E450E7FA237336EC00106D16 /* NewsCollectionViewController.swift */,
-				E44C81942373A24400DA3BCA /* ArticleViewController.swift */,
+				E44635642398D4AA008D60BA /* Model */,
+				E44635632398D48C008D60BA /* View */,
+				E44635622398D44C008D60BA /* Controller */,
+				E44635652398D51D008D60BA /* Extensions */,
 				E450E7FC2373377C00106D16 /* NewsCollectionViewCell.swift */,
-				E450E800237341A400106D16 /* NewsApiManager.swift */,
-				E44C81922373962F00DA3BCA /* News.swift */,
-				E4698055237F2FC1000152B2 /* SettingsViewController.swift */,
 				E44F4096237287DA00A7F4FD /* Assets.xcassets */,
 				E44F4098237287DA00A7F4FD /* LaunchScreen.storyboard */,
 				E44F409B237287DA00A7F4FD /* Info.plist */,
